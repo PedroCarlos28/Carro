@@ -1,0 +1,28 @@
+{
+  "name": "Projeto Pessoa",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.colorTheme": "Default Dark+",
+        "editor.fontSize": 14,
+        "terminal.integrated.fontSize": 14 
+      },
+      
+      "extensions": [
+        "ms-azuretools.vscode-containers",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-spring-initializr",
+        "cweijan.vscode-mysql-client2",
+        "dart-code.flutter"
+      ]
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "",
+  "postStartCommand": "service mysql start"
+}
