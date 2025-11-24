@@ -9,23 +9,20 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
-
-import java.util.UUID;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Carro {
+public class Pessoa {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID) private UUID uuid;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID uuid;
 
     private Integer codigo;
-    private String marca;
-    private String modelo;
-    private Integer anoFabricacao;
-    private Integer anoModelo;
-    private Double valor;
+    private String nome;
+    private String cpf;
+    private Double altura;
+    private Double peso;
 }
